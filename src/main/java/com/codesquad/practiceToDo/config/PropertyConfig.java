@@ -1,4 +1,4 @@
-package com.codesquad.practiceToDo.BE.config;
+package com.codesquad.practiceToDo.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
