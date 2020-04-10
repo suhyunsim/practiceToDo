@@ -27,11 +27,11 @@ public class Card {
 //        return ZonedDateTime.now(ZoneId.of("Asia/Seoul")).format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 //    }
 
-    public Card(Long id, String contents, ZonedDateTime createdTime, ZonedDateTime modifiedTime, Boolean status) {
+    public Card(Long id, String contents, Boolean status) {
         this.id = id;
         this.contents = contents;
-        this.createdTime = createdTime;
-        this.modifiedTime = modifiedTime;
+//        this.createdTime = createdTime;
+//        this.modifiedTime = modifiedTime;
         this.status = status;
     }
 }
