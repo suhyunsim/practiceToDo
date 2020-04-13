@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class JwtUtils {
 
-    public static String createToken(String userId) {
+    public static String createToken(String userName) {
         Map<String, Object> headers = new HashMap<>();
         headers.put("typ", "JWT");
         headers.put("alg", "HS256");
@@ -21,7 +21,7 @@ public class JwtUtils {
         Date now = new Date();
         now.setTime(now.getTime() + expiredTime);
         payloads.put("exp", now);
-        payloads.put("aud", userId);
+        payloads.put("aud", userName);
 
         final Key key = Keys.secretKeyFor(SignatureAlgorithm.HS256);
 
